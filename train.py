@@ -184,10 +184,6 @@ def train():
     model = baseline_model(x, y)
     model.summary()
 
-    mcp_save = ModelCheckpoint(
-        "best.hdf5", save_best_only=True, monitor="val_loss", mode="min", verbose=1
-    )
-
     tensorboard = TensorBoard(log_dir="./", histogram_freq=1, write_images=True)
     mcp_save = ModelCheckpoint(
         "best.hdf5", save_best_only=True, monitor="val_loss", mode="min", verbose=1
