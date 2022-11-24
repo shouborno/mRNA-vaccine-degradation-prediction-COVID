@@ -1,0 +1,9 @@
+loguru
+kaggle
+pandas
+tqdm
+keras
+matplotlib
+tensorflow
+scikit-learn
+keras-layer-normalization
