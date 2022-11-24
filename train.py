@@ -195,7 +195,7 @@ def train():
     history = model.fit(
         x,
         y,
-        epochs=2,
+        epochs=300,
         validation_split=0.33,
         batch_size=128,
         verbose=1,
